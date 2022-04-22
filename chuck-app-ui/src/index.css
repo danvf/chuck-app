@@ -1,13 +1,17 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Apercu-Light";
+  src: local("Apercu-Light"), url(./fonts/Apercu-Light.ttf) format("truetype");
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Apercu-Medium";
+  src: local("Apercu-Medium"), url(./fonts/Apercu-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Apercu-Regular";
+  src: local("Apercu-Regular"),
+    url(./fonts/Apercu-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Apercu-Bold";
+  src: local("Apercu-Bold"), url(./fonts/Apercu-Bold.ttf) format("truetype");
 }
