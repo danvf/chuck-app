@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { fonts } from "./themes";
+import { apercu } from "./themes";
 
 export default createGlobalStyle`
     * {
@@ -25,7 +25,7 @@ export default createGlobalStyle`
         border: none;
         border-radius: 999px;
         padding: 0.4em 2.4em;
-        font-family: ${fonts.Apercu.light};
+        font-family: ${apercu.light};
         transition: all ease 0.2s;
 
         &:hover {

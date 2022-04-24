@@ -17,9 +17,6 @@ export const Home = () => {
           />
         </S.Footer>
       </S.Container>
-      {/* <S.Container>
-        <h1>Search</h1>
-      </S.Container> */}
     </>
   );
 };

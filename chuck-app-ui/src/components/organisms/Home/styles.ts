@@ -1,28 +1,27 @@
 import styled from "styled-components";
 import { gradientChangingBackground } from "../../../styles/animations";
-import { fonts } from "../../../styles/themes";
 
-export const Container = styled.div`
+export const Container = styled.section`
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 10vh;
+  padding-top: 5vh;
   width: 100vw;
   height: 100vh;
   ${gradientChangingBackground}
 `;
 
 export const Title = styled.h1`
-  font-family: ${fonts.Apercu.bold};
-  font-size: clamp(2rem, 14vw, 6rem);
+  font-family: ${(props) => props.theme.fonts.bold};
+  font-size: clamp(3rem, 14vw, 6rem);
   color: ${(props) => props.theme.colors.text};
 `;
 
 export const Subtitle = styled.h2`
-  font-family: ${fonts.Apercu.bold};
-  font-size: clamp(0.8rem, 4vw, 1.6rem);
+  font-family: ${(props) => props.theme.fonts.bold};
+  font-size: clamp(1rem, 4vw, 1.6rem);
   color: ${(props) => props.theme.colors.text};
 `;
 

@@ -4,9 +4,23 @@ interface Theme {
     secondary: string;
     text: string;
     secondary_text: string;
+    background: string;
     categories: string[];
   };
+  fonts: {
+    light: string;
+    regular: string;
+    medium: string;
+    bold: string;
+  };
 }
+
+export const apercu = {
+  light: "Apercu-Light",
+  regular: "Apercu-Regular",
+  medium: "Apercu-Medium",
+  bold: "Apercu-Bold",
+};
 
 export const defaultTheme: Theme = {
   colors: {
@@ -14,6 +28,7 @@ export const defaultTheme: Theme = {
     secondary: "",
     text: "#fffffc",
     secondary_text: "#000003",
+    background: "#fffffc",
     categories: [
       "#ff7070",
       "#ffbf70",
@@ -24,13 +39,5 @@ export const defaultTheme: Theme = {
       "#9785ff",
     ],
   },
-};
-
-export const fonts = {
-  Apercu: {
-    light: "Apercu-Light",
-    regular: "Apercu-Regular",
-    medium: "Apercu-Medium",
-    bold: "Apercu-Bold",
-  },
+  fonts: apercu,
 };
