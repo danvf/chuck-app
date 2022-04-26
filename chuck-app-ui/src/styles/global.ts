@@ -7,12 +7,17 @@ export default createGlobalStyle`
         margin: 0;
         font-family: 'Apercu-Regular';
         box-sizing: border-box;
+        overflow-x: hidden;
 
-        &::-webkit-scrollbar-track {
-        }
         &::-webkit-scrollbar {
+            height: 4px;
+            width: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
         }
         &::-webkit-scrollbar-thumb {
+            background: #a7a7a7;
         }
     }
 
@@ -27,6 +32,7 @@ export default createGlobalStyle`
         padding: 0.4em 2.4em;
         font-family: ${apercu.light};
         transition: all ease 0.2s;
+        outline: none;
 
         &:hover {
             transform: translateY(-0.15em);

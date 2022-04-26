@@ -27,6 +27,7 @@ export const Subtitle = styled.h2`
 
 export const Footer = styled.span`
   position: absolute;
+  min-height: 50px;
   bottom: 24px;
   display: flex;
   justify-content: center;

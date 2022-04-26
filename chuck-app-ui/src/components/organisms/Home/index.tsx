@@ -1,8 +1,11 @@
 import { Button } from "../../atoms/Button";
 import * as S from "./styles";
+import { HomeProps } from "./types";
 
-export const Home = () => {
-  const scrollToCategorySearch = () => {};
+export const Home = ({ scrollRef }: HomeProps) => {
+  const scrollToCategorySearch = () => {
+    scrollRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <>

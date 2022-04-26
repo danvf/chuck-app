@@ -1,13 +1,28 @@
 import styled from "styled-components";
+import { FaCheck } from "react-icons/fa";
 
-interface CardProps {
+interface CategoryBtnProps {
   index: number;
 }
 
-export const Container = styled.div`
-  height: 60px;
-  width: 50vw;
+interface ContainerProps {
+  active: boolean;
+}
 
+export const Check = styled(FaCheck)`
+  position: absolute;
+  left: 2px;
+  width: 3.5vw;
+`;
+
+export const Container = styled.div<ContainerProps>`
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: 60px;
+  width: 100%;
+  padding-left: ${(props) => (props.active ? "5vw" : "0")};
   transition: all ease 0.2s;
 
   &:hover {
@@ -17,13 +32,12 @@ export const Container = styled.div`
   }
 
   &:active {
-    padding-left: 2vw;
-    margin-left: 5vw;
+    padding-left: 4vw;
     transform: translateY(0);
   }
 `;
 
-export const CategoryBtn = styled.button<CardProps>`
+export const CategoryBtn = styled.button<CategoryBtnProps>`
   border-radius: 0;
   display: flex;
   flex-direction: row;
@@ -31,9 +45,13 @@ export const CategoryBtn = styled.button<CardProps>`
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  font-size: 1.2rem;
+  font-family: ${(props) => props.theme.fonts.regular};
+  text-transform: lowercase;
+  color: ${(props) => props.theme.colors.text};
   background: ${(props) =>
     props.theme.colors.categories[
-      props.theme.colors.categories.lenght % (props.index + 1)
+      props.index % props.theme.colors.categories.length
     ]};
 
   &:hover {
@@ -42,7 +60,6 @@ export const CategoryBtn = styled.button<CardProps>`
   }
 
   &:active {
-    margin-left: 5vw;
     transform: translateY(0);
   }
 `;

@@ -4,13 +4,19 @@ export const chuckApi = createApi({
   reducerPath: "chuckApi",
   baseQuery: fetchBaseQuery({ baseUrl: "https://api.chucknorris.io/jokes/" }),
   endpoints: (builder) => ({
-    getCategories: builder.query<string[], void>({
+    getChuckCategories: builder.query<string[], void>({
       query: () => `categories`,
     }),
-    getRandomJoke: builder.query<any, string>({
-      query: (category: string) => `random?category={${category}}`,
+    getChuckRandomJoke: builder.query<string, string>({
+      query: (category: string) => `random?category=${category}`,
+      transformResponse: (response: any) => {
+        return response.value;
+      },
     }),
   }),
 });
 
-export const { useGetCategoriesQuery, useGetRandomJokeQuery } = chuckApi;
+export const {
+  useGetChuckCategoriesQuery,
+  useGetChuckRandomJokeQuery,
+} = chuckApi;

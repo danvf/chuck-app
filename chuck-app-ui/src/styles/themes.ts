@@ -25,19 +25,11 @@ export const apercu = {
 export const defaultTheme: Theme = {
   colors: {
     primary: "#000003",
-    secondary: "",
+    secondary: "#fffffc",
     text: "#fffffc",
     secondary_text: "#000003",
     background: "#fffffc",
-    categories: [
-      "#ff7070",
-      "#ffbf70",
-      "#fdff85",
-      "#99ff85",
-      "#5cf1ff",
-      "#70a7ff",
-      "#9785ff",
-    ],
+    categories: ["#046dc8", "#1184a7", "#15a2a2", "#6fb1a0"],
   },
   fonts: apercu,
 };

@@ -1,4 +1,4 @@
-import { FaChevronCircleDown } from "react-icons/fa";
+import { FaChevronCircleDown, FaSyncAlt } from "react-icons/fa";
 import * as S from "./styles";
 import { ButtonProps } from "./types";
 
@@ -33,6 +33,17 @@ export const Button = ({
         >
           <FaChevronCircleDown size={40} />
         </S.ArrowBtn>
+      );
+    case "refresh":
+      return (
+        <S.RefreshBtn
+          id={id}
+          data-testid={id}
+          onClick={onClick}
+          disabled={disabled}
+        >
+          <FaSyncAlt size={24} />
+        </S.RefreshBtn>
       );
   }
 };
