@@ -1,3 +1,4 @@
+import { BsPaintBucket } from "react-icons/bs";
 import { FaChevronCircleDown, FaSyncAlt } from "react-icons/fa";
 import * as S from "./styles";
 import { ButtonProps } from "./types";
@@ -44,6 +45,18 @@ export const Button = ({
         >
           <FaSyncAlt size={24} />
         </S.RefreshBtn>
+      );
+    case "theme":
+      return (
+        <S.ThemeBtn
+          id={id}
+          data-testid={id}
+          onClick={onClick}
+          disabled={disabled}
+        >
+          <BsPaintBucket size={40} style={{ marginRight: "8px" }} />
+          <p>Change Theme</p>
+        </S.ThemeBtn>
       );
   }
 };

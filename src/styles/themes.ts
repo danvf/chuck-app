@@ -1,4 +1,5 @@
-interface Theme {
+export interface Theme {
+  name: string;
   colors: {
     primary: string;
     secondary: string;
@@ -24,6 +25,7 @@ export const apercu = {
 };
 
 export const defaultTheme: Theme = {
+  name: "default",
   colors: {
     primary: "#000003",
     secondary: "#fffffc",
@@ -37,6 +39,7 @@ export const defaultTheme: Theme = {
 };
 
 export const darkTheme: Theme = {
+  name: "dark",
   colors: {
     primary: "#fffffc",
     secondary: "#000003",
@@ -44,7 +47,14 @@ export const darkTheme: Theme = {
     text: "#000003",
     secondary_text: "#fffffc",
     background: "#222222",
-    categories: ["#046dc8", "#1184a7", "#15a2a2", "#6fb1a0"],
+    categories: [
+      "#370617",
+      "#6a040f",
+      "#9d0208",
+      "#d00000",
+      "#dc2f02",
+      "#e85d04",
+    ],
   },
   fonts: apercu,
 };

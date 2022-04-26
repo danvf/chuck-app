@@ -53,3 +53,18 @@ export const RefreshBtn = styled.button`
     margin-left: auto;
   }
 `;
+
+export const ThemeBtn = styled.button`
+  position: absolute;
+  top: 16px;
+  background: transparent;
+  color: ${(props) => props.theme.colors.text};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0;
+  font-style: ${(props) => props.theme.fonts.regular};
+  font-size: 1rem;
+`;

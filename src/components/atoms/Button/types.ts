@@ -1,4 +1,4 @@
-type ButtonTypes = "primary" | "arrow" | "refresh";
+type ButtonTypes = "primary" | "arrow" | "refresh" | "theme";
 
 export interface ButtonProps {
   id: string;
