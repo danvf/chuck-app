@@ -2,7 +2,7 @@
   "name": "chuck-app-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://danvf.github.io",
+  "homepage": "https://danvf.github.io/chuck-app",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.1",
     "@testing-library/jest-dom": "^5.14.1",
