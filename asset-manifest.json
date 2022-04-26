@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/chuck-app/static/css/main.bb03090d.css",
-    "main.js": "/chuck-app/static/js/main.63d1b51a.js",
+    "main.js": "/chuck-app/static/js/main.1d239b26.js",
     "static/js/787.579e9a91.chunk.js": "/chuck-app/static/js/787.579e9a91.chunk.js",
     "static/media/Apercu-Medium.ttf": "/chuck-app/static/media/Apercu-Medium.12b8a4fe0208b5270fef.ttf",
     "static/media/Apercu-Regular.ttf": "/chuck-app/static/media/Apercu-Regular.446b3316b211cb27f629.ttf",
@@ -10,11 +10,11 @@
     "static/media/chuck_8bit.png": "/chuck-app/static/media/chuck_8bit.e4e1b2bbc2df9dbeb045.png",
     "index.html": "/chuck-app/index.html",
     "main.bb03090d.css.map": "/chuck-app/static/css/main.bb03090d.css.map",
-    "main.63d1b51a.js.map": "/chuck-app/static/js/main.63d1b51a.js.map",
+    "main.1d239b26.js.map": "/chuck-app/static/js/main.1d239b26.js.map",
     "787.579e9a91.chunk.js.map": "/chuck-app/static/js/787.579e9a91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb03090d.css",
-    "static/js/main.63d1b51a.js"
+    "static/js/main.1d239b26.js"
   ]
 }
