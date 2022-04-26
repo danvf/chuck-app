@@ -11,7 +11,7 @@ export const Category = ({
   return (
     <>
       <S.Container active={active}>
-        {active && <S.Check size={24} />}
+        {active && <S.Check data-testid={"check-icon"} size={24} />}
         <S.CategoryBtn id={id} data-testid={id} index={index} onClick={onPick}>
           {title}
         </S.CategoryBtn>

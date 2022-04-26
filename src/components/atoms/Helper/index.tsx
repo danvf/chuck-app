@@ -8,8 +8,6 @@ export const Helper = ({ status, category }: HelperProps) => {
         return "Category: " + category;
       case "pick":
         return "Pick a category below: ";
-      case "error":
-        return "An error has ocurred";
     }
   };
 

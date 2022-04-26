@@ -1,4 +1,4 @@
-export type Status = "category" | "pick" | "error";
+export type Status = "category" | "pick";
 
 export interface HelperProps {
   status: Status;
