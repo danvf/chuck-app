@@ -11,6 +11,7 @@ interface ContainerProps {
 
 export const Check = styled(FaCheck)`
   position: absolute;
+  color: ${(props) => props.theme.colors.secondary_text};
   left: 2px;
   width: 3.5vw;
 `;
@@ -48,7 +49,7 @@ export const CategoryBtn = styled.button<CategoryBtnProps>`
   font-size: 1.2rem;
   font-family: ${(props) => props.theme.fonts.regular};
   text-transform: lowercase;
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.special_title};
   background: ${(props) =>
     props.theme.colors.categories[
       props.index % props.theme.colors.categories.length

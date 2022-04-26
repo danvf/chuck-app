@@ -27,7 +27,8 @@ export const JokeBox = styled.div`
 `;
 
 export const Joke = styled.h1`
-  font-size: clamp(1.4rem, 5vw, 2.8rem);
+  color: ${(props) => props.theme.colors.secondary_text};
+  font-size: clamp(1.1rem, 5vw, 2.8rem);
   font-family: ${(props) => props.theme.fonts.regular};
 `;
 

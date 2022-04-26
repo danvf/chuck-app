@@ -16,7 +16,7 @@ export const Container = styled.section`
 export const Title = styled.h1`
   font-family: ${(props) => props.theme.fonts.bold};
   font-size: clamp(3rem, 14vw, 6rem);
-  color: ${(props) => props.theme.colors.text};
+  color: ${(props) => props.theme.colors.special_title};
 `;
 
 export const Subtitle = styled.h2`
